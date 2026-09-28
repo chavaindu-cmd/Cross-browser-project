@@ -1,3 +1,20 @@
+@keyframes imgzoom {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    50% {
+        transform: scale(1.2) rotate(10deg);
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+    
+}
+
+.bodyval
+{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 .navbar
 {
     max-width: 1109px;
@@ -6,6 +23,13 @@
     display: flex;
     justify-content: space-between;
     align-items:flex-start;
+}
+.nav-item
+{
+    fill: #111111;
+    font-weight: bold;
+    text-decoration: none; 
+    transition: color 0.3s ease, transform 0.3s ease; 
 }
 .main-container
 {
@@ -55,11 +79,13 @@
     max-width: 1110px;
     max-height: 1960px;
      margin-top: 100px;
+    
 }
 .grid_image_one_column_left{
     
     grid-column: 1 / 4;
     grid-row: 1 / 8;
+  
 }
 .grid_image_two_column_middle{
     
@@ -199,4 +225,14 @@
     justify-content: space-between;
     align-items:flex-start;
      margin-top: 100px;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.footerimages
+{
+    max-width: 95px;
+    width: 100%;
+    max-height: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
